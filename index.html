@@ -222,7 +222,7 @@
 		    var p = fileArray[i];
 
 		    $('#rankList').append('<div class="rank">Chair ' + (i + 1) + '</div>');
-		    $('#audioList').append('<div class ="fileDiv" id="' + p + '"><audio id="sound' + p + '" controls></audio><textarea class="note" placeholder="note" style="resize: none;" /></div>');
+		    $('#audioList').append('<div class ="fileDiv" id="' + p + '"><audio id="sound' + p + '" controls></audio><textarea class="note" placeholder="note" style="resize: none;"></textarea></div>');
 		    var sound = document.getElementById('sound' + p);
 		    sound.src = URL.createObjectURL(this.files[p]);
 		    sound.onend = function (e) {
